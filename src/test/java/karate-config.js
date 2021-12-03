@@ -6,10 +6,12 @@ function fn() {
     }
     var config = { // base config JSON
         baseUrl: 'https://petstore.swagger.io/v2/'
+
     };
     if (env == 'stage') {
 
-    } else if (env == 'e2e') {
+
+    } else if (env == 'prod') {
 
     }
     // don't waste time waiting for a connection or if servers don't respond within 5 seconds
