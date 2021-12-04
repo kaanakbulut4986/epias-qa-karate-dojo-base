@@ -110,7 +110,13 @@ Feature: crud requests
      * print myVar
 
 
-
+   Scenario Outline: reading csv file - <id>
+     * path 'pet', id
+     * method GET
+     * match responseStatus == <status>
+     * print '<name>'
+     Examples:
+     |read('classpath:tests/data/data.csv')|
 
 
 
